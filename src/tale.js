@@ -1,27 +1,29 @@
 export const kolobok = (name) => {
+  let resultPhrase;
   switch(name) {
     case 'Дедушка':
-        console.log('Я от дедушки ушёл');
-        break;
+      resultPhrase = 'Я от дедушки ушёл';
+      break;
     case 'Заяц':
-        console.log('Я от зайца ушёл');
-        break;
+      resultPhrase = 'Я от зайца ушёл';
+      break;
     case 'Лиса':
-        console.log('Меня съели');
-        break;
+      resultPhrase = 'Меня съели';
+      break;
   }
+  return resultPhrase;
 }
 
 export const newYear = (name) => {
   let resultName;
   switch(name) {
     case 'Дед Мороз':
-        resultName = 'Дед Мороз';
-        break;
+      resultName = 'Дед Мороз';
+      break;
     case 'Снегурочка':
-        resultName = 'Снегурочка';
-        break;
+      resultName = 'Снегурочка';
+      break;
     }
 
-  console.log(`${resultName}! ${resultName}! ${resultName}!`);
+  return `${resultName}! ${resultName}! ${resultName}!`;
 }
